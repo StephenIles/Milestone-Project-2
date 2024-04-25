@@ -5,108 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <title>One Life</title>
+    <title>Cookie Craze</title>
   </head>
   <body>
-    <div class="container-fliud header-div">
-        <div class="row page-nav">
-          <ul class="navbar-nav text-center collapse" id="navbarToggleExternalContent">
-            <li class="nav-item col-2 ui-home "><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item col-2 ui-about-us"><a class="nav-link" href="about.html">About Us</a></li>
-            <li class="nav-item col-2 ui-spare"></li>
-            <li class="nav-item col-2 ui-our-community"><a class="nav-link" href="our-community.html">Our Community</a></li>
-            <li class="nav-item col-2 ui-join-us"><a class="nav-link" href="join-us.html">Join Us</a></li>
-          </ul>
+    <div class="container-fluid header justify-content-center">
+      <div class="row text-center justify-content-center">
+        <div class="col-lg-2">
+          <div class="logo"></div>
         </div>
-        <div class="logo" > </div>
-        <nav class="navbar navbar-dark">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="col-lg-6">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg"><a href="index.html"><h4>Home</h4></a></div>
+            <div class="col-lg"><a href="#how-to"><h4>How to Play</h4></a></div>
+            <div class="col-lg"><a href="#top-score"><h4>Top Scores</h4></a></div>
           </div>
-        </nav>  
-    </div>
-    <div class="container-fluid hero-image">
-      <div class="hero-element">
-        <h1>One Life</h1>
-        <h2>An Upcoming New Discord Community</h2>
-        <a href="join-us.html"><div class="btn button">Join Us</div></a>
+        </div>
       </div>
     </div>
-    <div class="container-fluid features">
-      <h1>Features</h1>
-      <div class="row features-element">
-        <div class="col-4 features-text">
-          <h3>Weekly Community Events</h3>
-          <p>With our ever expanding community of people from all over the world all with different interests, we want to encourage people to explore and join in with activies that they enjoy and are passionate about. To help with this we run weekly event for anything Gaming, Coding, Art Events, Karaoke, Movie Nights and so much more. You can see what events are running on our <a href="our-community.html">Community Page.</a></p>
+    <div class="container game">
+      <div class="row game-head justify-content-center text-center align-items-end">
+        <div class="col-lg points">
+          <h3>Current Cookies: <span id="points">200</span></h3>
         </div>
-        <div class="col-4 events-img"></div>
+        <div class="col-lg points-per-second">
+          <h3>Cookies Per Second: <span id="pps">150</span></h3>
+        </div>
+        <hr>
       </div>
-      <div class="row features-element">
-        <div class="col-4 admins-img"></div>
-        <div class="col-4 features-text">
-          <h3>Friendly Admin Team</h3>
-          <p>To make sure everyone feels welcome and safe in our community we have enlisted the help of some great Mods and Admins to be around to help with any problems. All staff are all very approachable and you will always find some staff online for any issues that you have. Of course, if they do not answer straight away you can open a ticket or use the <a href="contact.html">Question Form</a> to ask any questions that you need. </p>
+      <div class="row text-center">
+        <div class="col-lg game-left">
+          <div class="row manual-button">
+            <div class="col-lg">
+              <div id="cookie"></div>
+            </div>
+          </div>
+          <div class="row upgrade justify-content-center">
+            <div class="col-lg-7 upgrade-stats s1"><h3>Upgrade 1 Level: <span id="u1l">2</span> <span id="u1max">(max)</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-7  upgrade-stats s2"><h3>Upgrade 2 Level: <span id="u2l">2</span> <span id="u2max">(max)</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-7  upgrade-stats s3"><h3>Upgrade 3 Level: <span id="u3l">2</span> <span id="u3max">(max)</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-7  upgrade-stats s4"><h3>Upgrade 4 Level: <span id="u4l">2</span> <span id="u4max">(max)</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-7  upgrade-stats s5"><h3>Upgrade 5 Level: <span id="u5l">2</span> <span id="u5max">(max)</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-7  upgrade-stats s6"><h3>Upgrade 6 Level: <span id="u6l">2</span> <span id="u6max">(max)</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-7  upgrade-stats s7"><h3>Upgrade 7 Level: <span id="u7l">2</span> <span id="u7max">(max)</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-7  upgrade-stats s8"><h3>Upgrade 8 Level: <span id="u8l">2</span> <span id="u8max">(max)</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-7  upgrade-stats s9"><h3>Upgrade 9 Level: <span id="u9l">2</span> <span id="u9max">(max)</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-7  upgrade-stats s10"><h3>Upgrade 10 Level: <span id="u10l">2</span> <span id="u10max">(max)</span></h3></div>
+            <div class="w-100"></div>
+          </div>
         </div>
-      </div>
-      <div class="row features-element">
-        <div class="col-4 features-text">
-          <h3>25+ Mature Server</h3>
-          <p>We have made the decision to make this server 25+ server as we felt this helps keep the feel of the community we are looking to build for you. We do make exceptions and if you are under 25 please use the <a href="contact.html">Question Form</a> to send us a message and a Staff member will get back to you.</p>
+        <div class="col-lg game-right justify-content-center">
+          <div class="row upgrade-buttons h-100 align-content-center">
+            <div class="col-lg-9 upgrade-b s1"><h3>Buy 1 Level For Upgrade 1: Price <span id="u1p">10</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-9 upgrade-b s2"><h3>Buy 1 Level For Upgrade 2: Price <span id="u2p">10</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-9 upgrade-b s3"><h3>Buy 1 Level For Upgrade 3: Price <span id="u3p">10</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-9 upgrade-b s4"><h3>Buy 1 Level For Upgrade 4: Price <span id="u4p">10</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-9 upgrade-b s5"><h3>Buy 1 Level For Upgrade 5: Price <span id="u5p">10</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-9 upgrade-b s6"><h3>Buy 1 Level For Upgrade 6: Price <span id="u6p">10</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-9 upgrade-b s7"><h3>Buy 1 Level For Upgrade 7: Price <span id="u7p">10</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-9 upgrade-b s8"><h3>Buy 1 Level For Upgrade 8: Price <span id="u8p">10</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-9 upgrade-b s9"><h3>Buy 1 Level For Upgrade 9: Price <span id="u9p">10</span></h3></div>
+            <div class="w-100"></div>
+            <div class="col-lg-9 upgrade-b s10"><h3>Buy 1 Level For Upgrade 10: Price <span id="u10p">10</span></h3></div>
+            <div class="w-100"></div>
+          </div>
         </div>
-        <div class="col-4 mature-img"></div>
       </div>
     </div>
-    <div class="container-fluid community-container">
-      <div>
-        <h1>Community Talent</h1>
+    <hr>
+    <hr>
+    <div class="container how-to text-center" id="how-to">
+      <div class="row how-to-header">
+        <div class="col-lg"><h2><strong>How to Play</strong></h2></div>
       </div>
-      <div class="row community-content">
-        <div class="col-lg-4 user1 talent">
-            <div class="talent-content">
-              <h3>@JohnBugs</h3>
-              <p>Photo from a recent hiking trip.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 user2 talent">
-            <div class="talent-content">
-              <h3>@Chirppy</h3>
-              <p>A digital drawing of a Market Town</p>
-            </div>
+      <div class="row how-to-body justify-content-center">
+        <div class="col-lg-7">
+          <p><strong>1. Click to Generate Cookies:</strong> The core mechanic of cookie clicker games involves clicking on a large cookie or a button to generate cookies. Each click produces a certain number of cookies, which serve as the game's currency.</p>
+          <p><strong>2. Upgrade Buildings:</strong> As you accumulate cookies, you can use them to purchase various buildings and upgrades. These buildings include cookie factories, farms, mines, and more. Each building generates cookies automatically over time, even when you're not actively playing the </p>
+          <p><strong>3. Unlock Upgrades:</strong> In addition to buildings, you can also unlock upgrades that enhance cookie production or provide other bonuses. These upgrades typically require a certain number of cookies to purchase.</p>
+          <p><strong>4. Monitor Progress:</strong> Keep an eye on your cookie production rate and total cookie count. The goal is to continuously increase your production rate by purchasing more buildings and upgrades.</p>
+          <p><strong>5. Idle Progress:</strong> Even when you're not actively clicking, your buildings will continue to generate cookies. This makes idle play an essential aspect of cookie clicker games. You can leave the game running in the background and come back later to collect your earnings and purchase more upgrades.</p>
+          <p>Remember, the gameplay is typically straightforward and revolves around the addictive cycle of clicking to generate cookies, using those cookies to buy buildings and upgrades, and watching your production grow exponentially over time. Enjoy baking those virtual cookies!</p>
         </div>
       </div>
-      <div class="row community-content">
-        <div class="col-lg-4 user3 talent">
-            <div class="talent-content">
-              <h3>@NekoNeko</h3>
-              <p>Some amazing food they have made</p>
-            </div>
-        </div>
-        <div class="col-lg-4 user4 talent">
-            <div class="talent-content">
-              <h3>@MuppetOfMedia</h3>
-              <p>A digital drawing of a futuristic city</p>
-            </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="container top-score text-center" id="top-score">
+      <div class="row scores-head">
+        <div class="col-lg"><h2><strong>Top Scores</strong></h2></div>
+      </div>
+      <div class="row scores-body">
+        <div class="col-lg">
+          <div class="top1 topitem"><h3>1st Score: <span id="top1">200</span></h3></div>
+          <div class="top2 topitem"><h3>2nd Score: <span id="top2">200</span></h3></div>
+          <div class="top3 topitem"><h3>3rd Score: <span id="top3">200</span></h3></div>
+          <div class="top4 topitem"><h3>4th Score: <span id="top4">200</span></h3></div>
+          <div class="top5 topitem"><h3>5th Score: <span id="top5">200</span></h3></div>
         </div>
       </div>
     </div>
     <div class="container-fluid footer">
-        <div class="row">
-          <div class="col-4 question">
-            <a href="contact.html">Ask Us A Question!</a>
-          </div>
-          <div class="col-8 socials">
-            <ul>
-              <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
-              <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a></li>
-              <li><a href="https://www.pinterest.co.uk" target="_blank"><i class="fa-brands fa-square-pinterest"></i></a></li>
-              <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
-              <li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
-            </ul>
-          </div>
+      <div class="row">
+        <div class="col-lg">
+
         </div>
       </div>
+    </div>
     <script src="https://kit.fontawesome.com/6414297e71.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
