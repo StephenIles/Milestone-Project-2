@@ -52,29 +52,40 @@ $(function () {
     ".s10",
   ];
 
-  $.each(upgradeMaxIds, function (index, value) {
-    if (upgradeLevels[index] < 10) {
-      $(value).hide();
-    }
-  });
 
-  $.each(upgradePricesIds, function (index, value) {
-    $(value).text(upgradePrices[index]);
-  });
+  // Button Functionallity 
 
   $.each(upgradeButtons, function (index, value) {
     $(value).on("click", function () {
       if (upgradeLevels[index] < 10) {
         upgradeLevels[index] += 1;
+        upgradePrices[index] = upgradePrices[index] * 2;
+        console.log(upgradePrices[index]);
         $(upgradeLevelsIds[index]).text(upgradeLevels[index]);
+        $(upgradePricesIds[index]).text(upgradePrices[index]);
       } else {
         $(upgradeMaxIds[index]).show();
       }
     });
   });
 
+  // Hides "Max" tag if the level is less than 10
+
+  $.each(upgradeMaxIds, function (index, value) {
+    if (upgradeLevels[index] < 10) {
+      $(value).hide();
+    }
+  });
+
+  // Initalizes Upgrade Prices
+
+  $.each(upgradePricesIds, function (index, value) {
+    $(value).text(upgradePrices[index]);
+  });
+
   $("#cookie").on("click", function () {
     currentCookies += cookiesPerClick;
     $("#points").text(currentCookies);
   });
+
 });
