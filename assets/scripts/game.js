@@ -59,12 +59,14 @@ $(function () {
     $(value).on("click", function () {
       if (upgradeLevels[index] < 10) {
         upgradeLevels[index] += 1;
-        upgradePrices[index] = upgradePrices[index] * 2;
-        console.log(upgradePrices[index]);
+        upgradePrices[index] = upgradePrices[index] * 5;
+        cookiesPerClick = cookiesPerClick * 2;
         $(upgradeLevelsIds[index]).text(upgradeLevels[index]);
         $(upgradePricesIds[index]).text(upgradePrices[index]);
+        $("#cps").text(cookiesPerClick);
       } else {
         $(upgradeMaxIds[index]).show();
+        $(upgradePricesIds[index]).text("Max Level");
       }
     });
   });
