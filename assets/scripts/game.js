@@ -1,6 +1,8 @@
 $(function () {
   var currentCookies = 0;
   var cookiesPerClick = 1;
+  var cookiesPerSecond = 0;
+  var cookiesPerSecondAddition = 1;
   var upgradeLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   var upgradeLevelsIds = [
     "#u1l",
@@ -26,7 +28,9 @@ $(function () {
     "#u9max",
     "#u10max",
   ];
-  var upgradePrices = [10, 250, 1500, 3000, 5000, 7500, 12000, 18000, 30000, 50000];
+  var upgradePrices = [
+    10, 250, 1500, 3000, 5000, 7500, 12000, 18000, 30000, 50000,
+  ];
   var upgradePricesIds = [
     "#u1p",
     "#u2p",
@@ -67,10 +71,11 @@ $(function () {
           currentCookies = currentCookies - upgradePrices[index];
           upgradeLevels[index] += 1;
           upgradePrices[index] = upgradePrices[index] * 10;
-          cookiesPerClick = Math.ceil(cookiesPerClick * 1.5);
+          cookiesPerSecondAddition = Math.ceil(cookiesPerSecondAddition * 1.5);
+          cookiesPerSecond += cookiesPerSecondAddition;
+          cookiesPerClick += 10;
           $(upgradeLevelsIds[index]).text(upgradeLevels[index]);
           $(upgradePricesIds[index]).text(upgradePrices[index]);
-          $("#cps").text(cookiesPerClick);
           $("#points").text(currentCookies);
         } else {
           $(upgradeMaxIds[index]).show();
@@ -93,4 +98,12 @@ $(function () {
   $.each(upgradePricesIds, function (index, value) {
     $(value).text(upgradePrices[index]);
   });
+
+  setInterval(cps, 1000);
+
+  function cps() {
+    currentCookies += cookiesPerSecond;
+    $("#cps").text(cookiesPerSecond);
+    $("#points").text(currentCookies);
+  }
 });
