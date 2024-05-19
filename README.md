@@ -18,17 +18,15 @@
 
 -   ### Design
     -   #### Colour Scheme
-        -   I used [Color Hunt](https://colorhunt.co) to find a colour palette I felt went well with the design of the website. This is the [Colour Palette](https://colorhunt.co/palette/3924675d3587a367b1ffd1e3) that I ended up chosing and these will be featured throughout the website.
+        -   I used [Color Hunt](https://colorhunt.co) to find a colour palette I felt went well with the design of the website. This is the [Colour Palette](https://colorhunt.co/palette/0032852a629aff7f3effda78) that I ended up chosing and these will be featured throughout the website.
     -   #### Typography
-        -   The Oswald and Roboto are the two main font used throughout the whole website with Sans Serif as the fallback font in case for any reason these fonts are not being imported into the site correctly. Both fonts are clean and commonly used fonts, Oswald is have more of a block type look to is making it ideal for Headers and Titles while Roboto is more rounded and ideal for website text.
+        -   
     -   #### Imagery
-        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
-        -   The occupanying imagery to go with each feature is aimed to give the user a quick insite into what the feature is.
-        -   On the community page all imagery used is from community members who want to show off their talents.
+        -   
 
 *   ### Wireframes
 
-    -   Whole Website Wireframe - Wireframes for Mobile, Tablet and Web - [View](https://www.figma.com/design/DCMRN4Avmdm4xe881iXBDh/Untitled?node-id=0-1&t=qtUBU941Gj0ui5Ry-0)
+    -   Whole Website Wireframe - Wireframes the website - [View](https://www.figma.com/design/DCMRN4Avmdm4xe881iXBDh/Untitled?node-id=0-1&t=qtUBU941Gj0ui5Ry-0)
 
 ## Features
 
@@ -57,7 +55,7 @@
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Figma:](https://www.figma.com)
-    - InVision was used to create the [wireframes](https://www.figma.com/design/DCMRN4Avmdm4xe881iXBDh/Untitled?node-id=0-1&t=qtUBU941Gj0ui5Ry-0) during the design process.
+    - Figma was used to create the [wireframes](https://www.figma.com/design/DCMRN4Avmdm4xe881iXBDh/Untitled?node-id=0-1&t=qtUBU941Gj0ui5Ry-0) during the design process.
 
 ## Testing
 
@@ -158,5 +156,5 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   My Mentor for continuous helpful feedback.
 
-## Problems and Soultions
+## Problems and Solutions
 

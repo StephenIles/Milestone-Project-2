@@ -62,14 +62,15 @@ $(function () {
   });
 
   // Button Functionallity
-
   $.each(upgradeButtons, function (index, value) {
     $(upgradeButtons[index]).on("mouseenter", function () {
       $(upgradeButtons[index]).css("background-color", "#003285")
     });
+
     $(upgradeButtons[index]).on("mouseleave", function () {
       $(upgradeButtons[index]).css("background-color", "#2A629A")
     });
+
     $(value).on("click", function () {
       if (currentCookies > upgradePrices[index]) {
         if (upgradeLevels[index] <= 9) {
@@ -90,8 +91,53 @@ $(function () {
     });
   });
 
-  // Hides "Max" tag if the level is less than 10
+  // Reset Button functionality
+  $(".reset-button").on("click", function () {
+    var top1 = $("#top1").text();
+    var top2 = $("#top2").text();
+    var top3 = $("#top3").text();
+    var top4 = $("#top4").text();
+    var top5 = $("#top5").text();
 
+    if(currentCookies > top1) {
+      $("#top1").text(currentCookies);
+      $("#top2").text(top1);
+      $("#top3").text(top2);
+      $("#top4").text(top3);
+      $("#top5").text(top4);
+    } else if (currentCookies > top2) {
+      $("#top2").text(currentCookies);
+      $("#top3").text(top2);
+      $("#top4").text(top3);
+      $("#top5").text(top4);
+    } else if (currentCookies > top3) {
+      $("#top3").text(currentCookies);
+      $("#top4").text(top3);
+      $("#top5").text(top4);
+    } else if (currentCookies > top4) {
+      $("#top4").text(currentCookies);
+      $("#top5").text(top4);
+    } else if (currentCookies > top5) {
+      $("#top5").text(currentCookies);
+    } else {
+
+    }
+
+    currentCookies = 0;
+    cookiesPerClick = 1;
+    cookiesPerSecond = 0;
+    cookiesPerSecondAddition = 1;
+    upgradeLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    upgradePrices = [10, 250, 1500, 3000, 5000, 7500, 12000, 18000, 30000, 50000];
+
+    $.each(upgradeLevels, function(index, value) {
+      $(upgradeLevelsIds[index]).text(upgradeLevels[index]);
+      $(upgradePricesIds[index]).text(upgradePrices[index]);
+      $("#points").text(currentCookies);
+    });
+  });
+
+  // Hides "Max" tag if the level is less than 10
   $.each(upgradeMaxIds, function (index, value) {
     if (upgradeLevels[index] <= 9) {
       $(value).hide();
@@ -99,16 +145,15 @@ $(function () {
   });
 
   // Initalizes Upgrade Prices
-
   $.each(upgradePricesIds, function (index, value) {
     $(value).text(upgradePrices[index]);
   });
 
-  setInterval(cps, 1000);
-
-  function cps() {
+  // Functionallity for automatic cookies
+  setInterval(()=> {
     currentCookies += cookiesPerSecond;
     $("#cps").text(cookiesPerSecond);
     $("#points").text(currentCookies);
-  }
+  }, 1000);
+
 });

@@ -63,6 +63,12 @@ body {
     margin: 30px;
 }
 
+.reset-button {
+    background-color: #FFDA78;
+    border-radius: 30px;
+    border: solid 2px black;
+    margin: auto;
+}
 /****************** Footer **************/
 
 .footer {
