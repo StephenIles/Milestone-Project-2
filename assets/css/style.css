@@ -43,11 +43,10 @@ body {
     background-size: contain;
     height: 400px;
     margin: 20px;
+    transform: scale(1, 1);
 }
 
-.upgrade {
-    margin-bottom: 50px
-}
+
 
 .upgrade-stats {
     background-color: #FF7F3E;
@@ -60,7 +59,7 @@ body {
     background-color: #2A629A;
     border-radius: 30px;
     border: solid 2px black;
-    margin: 30px;
+    margin: 10px;
 }
 
 .reset-button {
@@ -109,3 +108,4 @@ body {
 .topitem {
     margin: 20px;
 }
+  

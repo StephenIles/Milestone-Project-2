@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./assets/scripts/game.js"></script>
     <title>Cookie Craze</title>
@@ -17,74 +22,154 @@
         </div>
         <div class="col">
           <div class="row h-100 align-items-center">
-            <div class="col-lg"><a href="index.html"><h4>Home</h4></a></div>
-            <div class="col-lg"><a href="#how-to"><h4>How to Play</h4></a></div>
-            <div class="col-lg"><a href="#top-score"><h4>Top Scores</h4></a></div>
+            <div class="col-lg">
+              <a href="index.html"><h4>Home</h4></a>
+            </div>
+            <div class="col-lg">
+              <a href="#how-to"><h4>How to Play</h4></a>
+            </div>
+            <div class="col-lg">
+              <a href="#top-score"><h4>Top Scores</h4></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="container game">
-      <div class="row game-head justify-content-center text-center align-items-end">
+      <div
+        class="row game-head justify-content-center text-center align-items-end"
+      >
         <div class="col-lg points">
           <h3>Current Cookies: <span id="points">0</span></h3>
         </div>
         <div class="col-lg points-per-second">
           <h3>Cookies Per Second: <span id="cps">0</span></h3>
         </div>
-        <hr>
+        <hr />
       </div>
       <div class="row text-center">
-        <div class="col-lg game-left">
-          <div class="row manual-button">
-            <div class="col-lg">
-              <div id="cookie"></div>
-            </div>
+        <div class="row manual-button">
+          <div class="col-lg">
+            <div id="cookie"></div>
           </div>
+        </div>
+        <div class="col-lg game-right justify-content-center">
           <div class="row upgrade justify-content-center">
-            <div class="col-lg-7 upgrade-stats s1"><h3>Upgrade 1 Level: <span id="u1l">0</span> <span id="u1max">(max)</span></h3></div>
+            <div class="col-lg-7 upgrade-stats s1">
+              <h3>
+                Upgrade 1 Level: <span id="u1l">0</span>
+                <span id="u1max">(max)</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg-7  upgrade-stats s2"><h3>Upgrade 2 Level: <span id="u2l">0</span> <span id="u2max">(max)</span></h3></div>
+            <div class="col-lg-7 upgrade-stats s2">
+              <h3>
+                Upgrade 2 Level: <span id="u2l">0</span>
+                <span id="u2max">(max)</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg-7  upgrade-stats s3"><h3>Upgrade 3 Level: <span id="u3l">0</span> <span id="u3max">(max)</span></h3></div>
+            <div class="col-lg-7 upgrade-stats s3">
+              <h3>
+                Upgrade 3 Level: <span id="u3l">0</span>
+                <span id="u3max">(max)</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg-7  upgrade-stats s4"><h3>Upgrade 4 Level: <span id="u4l">0</span> <span id="u4max">(max)</span></h3></div>
+            <div class="col-lg-7 upgrade-stats s4">
+              <h3>
+                Upgrade 4 Level: <span id="u4l">0</span>
+                <span id="u4max">(max)</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg-7  upgrade-stats s5"><h3>Upgrade 5 Level: <span id="u5l">0</span> <span id="u5max">(max)</span></h3></div>
+            <div class="col-lg-7 upgrade-stats s5">
+              <h3>
+                Upgrade 5 Level: <span id="u5l">0</span>
+                <span id="u5max">(max)</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg-7  upgrade-stats s6"><h3>Upgrade 6 Level: <span id="u6l">0</span> <span id="u6max">(max)</span></h3></div>
+            <div class="col-lg-7 upgrade-stats s6">
+              <h3>
+                Upgrade 6 Level: <span id="u6l">0</span>
+                <span id="u6max">(max)</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg-7  upgrade-stats s7"><h3>Upgrade 7 Level: <span id="u7l">0</span> <span id="u7max">(max)</span></h3></div>
+            <div class="col-lg-7 upgrade-stats s7">
+              <h3>
+                Upgrade 7 Level: <span id="u7l">0</span>
+                <span id="u7max">(max)</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg-7  upgrade-stats s8"><h3>Upgrade 8 Level: <span id="u8l">0</span> <span id="u8max">(max)</span></h3></div>
+            <div class="col-lg-7 upgrade-stats s8">
+              <h3>
+                Upgrade 8 Level: <span id="u8l">0</span>
+                <span id="u8max">(max)</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg-7  upgrade-stats s9"><h3>Upgrade 9 Level: <span id="u9l">0</span> <span id="u9max">(max)</span></h3></div>
+            <div class="col-lg-7 upgrade-stats s9">
+              <h3>
+                Upgrade 9 Level: <span id="u9l">0</span>
+                <span id="u9max">(max)</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg-7  upgrade-stats s10"><h3>Upgrade 10 Level: <span id="u10l">0</span> <span id="u10max">(max)</span></h3></div>
+            <div class="col-lg-7 upgrade-stats s10">
+              <h3>
+                Upgrade 10 Level: <span id="u10l">0</span>
+                <span id="u10max">(max)</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
           </div>
         </div>
         <div class="col-lg game-right justify-content-center">
           <div class="row upgrade-buttons h-100 align-content-center">
-            <div class="col-lg upgrade-b b1"><h3>Buy 1 Level For Upgrade 1: Price <span id="u1p">0</span></h3></div>
+            <div class="col-lg upgrade-b b1">
+              <h3>Buy 1 Level For Upgrade 1: Price <span id="u1p">0</span></h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg upgrade-b b2"><h3>Buy 1 Level For Upgrade 2: Price <span id="u2p">0</span></h3></div>
+            <div class="col-lg upgrade-b b2">
+              <h3>Buy 1 Level For Upgrade 2: Price <span id="u2p">0</span></h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg upgrade-b b3"><h3>Buy 1 Level For Upgrade 3: Price <span id="u3p">0</span></h3></div>
+            <div class="col-lg upgrade-b b3">
+              <h3>Buy 1 Level For Upgrade 3: Price <span id="u3p">0</span></h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg upgrade-b b4"><h3>Buy 1 Level For Upgrade 4: Price <span id="u4p">0</span></h3></div>
+            <div class="col-lg upgrade-b b4">
+              <h3>Buy 1 Level For Upgrade 4: Price <span id="u4p">0</span></h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg upgrade-b b5"><h3>Buy 1 Level For Upgrade 5: Price <span id="u5p">0</span></h3></div>
+            <div class="col-lg upgrade-b b5">
+              <h3>Buy 1 Level For Upgrade 5: Price <span id="u5p">0</span></h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg upgrade-b b6"><h3>Buy 1 Level For Upgrade 6: Price <span id="u6p">0</span></h3></div>
+            <div class="col-lg upgrade-b b6">
+              <h3>Buy 1 Level For Upgrade 6: Price <span id="u6p">0</span></h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg upgrade-b b7"><h3>Buy 1 Level For Upgrade 7: Price <span id="u7p">0</span></h3></div>
+            <div class="col-lg upgrade-b b7">
+              <h3>Buy 1 Level For Upgrade 7: Price <span id="u7p">0</span></h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg upgrade-b b8"><h3>Buy 1 Level For Upgrade 8: Price <span id="u8p">0</span></h3></div>
+            <div class="col-lg upgrade-b b8">
+              <h3>Buy 1 Level For Upgrade 8: Price <span id="u8p">0</span></h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg upgrade-b b9"><h3>Buy 1 Level For Upgrade 9: Price <span id="u9p">0</span></h3></div>
+            <div class="col-lg upgrade-b b9">
+              <h3>Buy 1 Level For Upgrade 9: Price <span id="u9p">0</span></h3>
+            </div>
             <div class="w-100"></div>
-            <div class="col-lg upgrade-b b10"><h3>Buy 1 Level For Upgrade 10: Price <span id="u10p">0</span></h3></div>
+            <div class="col-lg upgrade-b b10">
+              <h3>
+                Buy 1 Level For Upgrade 10: Price <span id="u10p">0</span>
+              </h3>
+            </div>
             <div class="w-100"></div>
           </div>
         </div>
@@ -93,47 +178,99 @@
         </div>
       </div>
     </div>
-    <hr>
-    <hr>
+    <hr />
+    <hr />
     <div class="container how-to text-center" id="how-to">
       <div class="row how-to-header">
-        <div class="col-lg"><h2><strong>How to Play</strong></h2></div>
+        <div class="col-lg">
+          <h2><strong>How to Play</strong></h2>
+        </div>
       </div>
       <div class="row how-to-body justify-content-center">
         <div class="col-lg-7">
-          <p><strong>1. Click to Generate Cookies:</strong> The core mechanic of cookie clicker games involves clicking on a large cookie or a button to generate cookies. Each click produces a certain number of cookies, which serve as the game's currency.</p>
-          <p><strong>2. Upgrade Buildings:</strong> As you accumulate cookies, you can use them to purchase various buildings and upgrades. These buildings include cookie factories, farms, mines, and more. Each building generates cookies automatically over time, even when you're not actively playing the </p>
-          <p><strong>3. Unlock Upgrades:</strong> In addition to buildings, you can also unlock upgrades that enhance cookie production or provide other bonuses. These upgrades typically require a certain number of cookies to purchase.</p>
-          <p><strong>4. Monitor Progress:</strong> Keep an eye on your cookie production rate and total cookie count. The goal is to continuously increase your production rate by purchasing more buildings and upgrades.</p>
-          <p><strong>5. Idle Progress:</strong> Even when you're not actively clicking, your buildings will continue to generate cookies. This makes idle play an essential aspect of cookie clicker games. You can leave the game running in the background and come back later to collect your earnings and purchase more upgrades.</p>
-          <p>Remember, the gameplay is typically straightforward and revolves around the addictive cycle of clicking to generate cookies, using those cookies to buy buildings and upgrades, and watching your production grow exponentially over time. Enjoy baking those virtual cookies!</p>
+          <p>
+            <strong>1. Click to Generate Cookies:</strong> The core mechanic of
+            cookie clicker games involves clicking on a large cookie or a button
+            to generate cookies. Each click produces a certain number of
+            cookies, which serve as the game's currency.
+          </p>
+          <p>
+            <strong>2. Upgrade Buildings:</strong> As you accumulate cookies,
+            you can use them to purchase various buildings and upgrades. These
+            buildings include cookie factories, farms, mines, and more. Each
+            building generates cookies automatically over time, even when you're
+            not actively playing the
+          </p>
+          <p>
+            <strong>3. Unlock Upgrades:</strong> In addition to buildings, you
+            can also unlock upgrades that enhance cookie production or provide
+            other bonuses. These upgrades typically require a certain number of
+            cookies to purchase.
+          </p>
+          <p>
+            <strong>4. Monitor Progress:</strong> Keep an eye on your cookie
+            production rate and total cookie count. The goal is to continuously
+            increase your production rate by purchasing more buildings and
+            upgrades.
+          </p>
+          <p>
+            <strong>5. Idle Progress:</strong> Even when you're not actively
+            clicking, your buildings will continue to generate cookies. This
+            makes idle play an essential aspect of cookie clicker games. You can
+            leave the game running in the background and come back later to
+            collect your earnings and purchase more upgrades.
+          </p>
+          <p>
+            Remember, the gameplay is typically straightforward and revolves
+            around the addictive cycle of clicking to generate cookies, using
+            those cookies to buy buildings and upgrades, and watching your
+            production grow exponentially over time. Enjoy baking those virtual
+            cookies!
+          </p>
         </div>
       </div>
     </div>
-    <hr>
-    <hr>
+    <hr />
+    <hr />
     <div class="container top-score text-center" id="top-score">
       <div class="row scores-head">
-        <div class="col-lg"><h2><strong>Top Scores</strong></h2></div>
+        <div class="col-lg">
+          <h2><strong>Top Scores</strong></h2>
+        </div>
       </div>
       <div class="row scores-body">
         <div class="col-lg">
-          <div class="top1 topitem"><h3>1st Score: <span id="top1">0</span></h3></div>
-          <div class="top2 topitem"><h3>2nd Score: <span id="top2">0</span></h3></div>
-          <div class="top3 topitem"><h3>3rd Score: <span id="top3">0</span></h3></div>
-          <div class="top4 topitem"><h3>4th Score: <span id="top4">0</span></h3></div>
-          <div class="top5 topitem"><h3>5th Score: <span id="top5">0</span></h3></div>
+          <div class="top1 topitem">
+            <h3>1st Score: <span id="top1">0</span></h3>
+          </div>
+          <div class="top2 topitem">
+            <h3>2nd Score: <span id="top2">0</span></h3>
+          </div>
+          <div class="top3 topitem">
+            <h3>3rd Score: <span id="top3">0</span></h3>
+          </div>
+          <div class="top4 topitem">
+            <h3>4th Score: <span id="top4">0</span></h3>
+          </div>
+          <div class="top5 topitem">
+            <h3>5th Score: <span id="top5">0</span></h3>
+          </div>
         </div>
       </div>
     </div>
     <div class="container-fluid footer">
       <div class="row">
-        <div class="col-lg">
-
-        </div>
+        <div class="col-lg"></div>
       </div>
     </div>
-    <script src="https://kit.fontawesome.com/6414297e71.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6414297e71.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

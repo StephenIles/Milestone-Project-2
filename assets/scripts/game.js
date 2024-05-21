@@ -59,17 +59,14 @@ $(function () {
   $("#cookie").on("click", function () {
     currentCookies += cookiesPerClick;
     $("#points").text(currentCookies);
+    $("#cookie").css("transform", "scale(1.05, 1.05");
+    setTimeout(function() {
+      $("#cookie").css("transform", "scale(1, 1)");
+    }, 50);
   });
 
   // Button Functionallity
   $.each(upgradeButtons, function (index, value) {
-    $(upgradeButtons[index]).on("mouseenter", function () {
-      $(upgradeButtons[index]).css("background-color", "#003285")
-    });
-
-    $(upgradeButtons[index]).on("mouseleave", function () {
-      $(upgradeButtons[index]).css("background-color", "#2A629A")
-    });
 
     $(value).on("click", function () {
       if (currentCookies > upgradePrices[index]) {
