@@ -137,3 +137,165 @@ body {
     margin: 20px;
 }
   
+/****************** Achievements **************/
+
+
+
+.achievement {
+    height: 150px;
+    margin: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.achievement-body h5 {
+    border: 1px solid black;
+    background-color: #7AB2B2;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.a1not {
+    background-image: url(../images/a1NotAchieved.png);
+}
+
+.a1achieve {
+    background-image: url(../images/a1Achieved.png);
+}
+
+
+
+#a2 {
+    background-image: url(../images/Chocolate_Factory_Max.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a3 {
+    background-image: url(../images/Cookies_Robots_Max.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a4 {
+    background-image: url(../images/Grandma_s_Seceret_Max.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a5 {
+    background-image: url(../images/Cookie_Conveyor_Max.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a6 {
+    background-image: url(../images/Magic_Rolling_Pins_Max.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a7 {
+    background-image: url(../images/Sugar_Rush_Max.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a8 {
+    background-image: url(../images/Time_Machines_Max.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a9 {
+    background-image: url(../images/Celestial_Cookies_Max.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a10 {
+    background-image: url(../images/Infinite_Cookies_Jar_Max.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a11 {
+    background-image: url(../images/1000_Cookies.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a12 {
+    background-image: url(../images/100_000_Cookies.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a13 {
+    background-image: url(../images/1_Million_Cookies.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a14 {
+    background-image: url(../images/10_Million_Cookies.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a15 {
+    background-image: url(../images/100_Million_Cookies.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a16 {
+    background-image: url(../images/1_Billion_Cookies.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a17 {
+    background-image: url(../images/10_Billion_Cookies.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a18 {
+    background-image: url(../images/100_Billion_Cookies.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a19 {
+    background-image: url(../images/1_Trillion_Cookies.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#a20 {
+    background-image: url(../images/10_Trillion_Cookies.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

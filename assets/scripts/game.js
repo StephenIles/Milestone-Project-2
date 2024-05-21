@@ -180,5 +180,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector(value).style.backgroundColor = "#A9A9A9";
       }
     });
+
+    if(upgradeLevels[0] === 10) {
+      document.getElementById("a1").classList.add("a1achieve");
+      document.getElementById("a1").classList.remove("a1not");
+    }
   }, 100);
 });
