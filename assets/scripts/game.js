@@ -1,7 +1,7 @@
 $(function () {
   var currentCookies = 0;
   var cookiesPerClick = 1;
-  var cookiesPerSecond = 0;
+  var cookiesPerSecond = 1000000000;
   var cookiesPerSecondAddition = 1;
   var upgradeLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   var upgradeLevelsIds = [
@@ -70,17 +70,18 @@ $(function () {
 
     $(value).on("click", function () {
       if (currentCookies > upgradePrices[index]) {
-        if (upgradeLevels[index] <= 9) {
+        if (upgradeLevels[index] < 9) {
           currentCookies = currentCookies - upgradePrices[index];
           upgradeLevels[index] += 1;
-          upgradePrices[index] = upgradePrices[index] * 10;
+          upgradePrices[index] = upgradePrices[index] * 5;
           cookiesPerSecondAddition = Math.ceil(cookiesPerSecondAddition * 1.5);
           cookiesPerSecond += cookiesPerSecondAddition;
           cookiesPerClick += 10;
           $(upgradeLevelsIds[index]).text(upgradeLevels[index]);
           $(upgradePricesIds[index]).text(upgradePrices[index]);
-          $("#points").text(currentCookies);
-        } else {
+        } else  if (upgradeLevels[index] == 9) {
+          upgradeLevels[index] += 1;
+          $(upgradeLevelsIds[index]).text(upgradeLevels[index]);
           $(upgradeMaxIds[index]).show();
           $(upgradePricesIds[index]).text("Max Level");
         }
@@ -136,7 +137,7 @@ $(function () {
 
   // Hides "Max" tag if the level is less than 10
   $.each(upgradeMaxIds, function (index, value) {
-    if (upgradeLevels[index] <= 9) {
+    if (upgradeLevels[index] < 9) {
       $(value).hide();
     }
   });
@@ -152,5 +153,19 @@ $(function () {
     $("#cps").text(cookiesPerSecond);
     $("#points").text(currentCookies);
   }, 1000);
+
+  setInterval(()=> {
+    $.each(upgradeButtons, function(index, value) {
+      if (currentCookies > upgradePrices[index]) {
+        if (upgradeLevels[index] != 10) {
+          $(value).css("background-color", "#7AB2B2");
+        } else {
+          $(value).css("background-color", "#36454F");
+        }
+      } else {
+        $(value).css("background-color", "#A9A9A9");
+      }
+    })
+  })
 
 });
