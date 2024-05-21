@@ -1,59 +1,59 @@
 document.addEventListener('DOMContentLoaded', function () {
   let currentCookies = 0;
   let cookiesPerClick = 1;
-  let cookiesPerSecond = 1000000000;
+  let cookiesPerSecond = 0;
   let cookiesPerSecondAddition = 1;
   let upgradeLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   const upgradeLevelsIds = [
-    "#u1l",
-    "#u2l",
-    "#u3l",
-    "#u4l",
-    "#u5l",
-    "#u6l",
-    "#u7l",
-    "#u8l",
-    "#u9l",
-    "#u10l"
+    "u1l",
+    "u2l",
+    "u3l",
+    "u4l",
+    "u5l",
+    "u6l",
+    "u7l",
+    "u8l",
+    "u9l",
+    "u10l"
   ];
   const upgradeMaxIds = [
-    "#u1max",
-    "#u2max",
-    "#u3max",
-    "#u4max",
-    "#u5max",
-    "#u6max",
-    "#u7max",
-    "#u8max",
-    "#u9max",
-    "#u10max"
+    "u1max",
+    "u2max",
+    "u3max",
+    "u4max",
+    "u5max",
+    "u6max",
+    "u7max",
+    "u8max",
+    "u9max",
+    "u10max"
   ];
   let upgradePrices = [
     10, 250, 1500, 3000, 5000, 7500, 12000, 18000, 30000, 50000,
   ];
   const upgradePricesIds = [
-    "#u1p",
-    "#u2p",
-    "#u3p",
-    "#u4p",
-    "#u5p",
-    "#u6p",
-    "#u7p",
-    "#u8p",
-    "#u9p",
-    "#u10p",
+    "u1p",
+    "u2p",
+    "u3p",
+    "u4p",
+    "u5p",
+    "u6p",
+    "u7p",
+    "u8p",
+    "u9p",
+    "u10p",
   ];
   const upgradeButtons = [
-    ".b1",
-    ".b2",
-    ".b3",
-    ".b4",
-    ".b5",
-    ".b6",
-    ".b7",
-    ".b8",
-    ".b9",
-    ".b10",
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5",
+    "b6",
+    "b7",
+    "b8",
+    "b9",
+    "b10",
   ];
 
   document.getElementById("cookie").addEventListener("click", function () {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (upgradeLevels[index] == 9) {
           upgradeLevels[index] += 1;
           document.querySelector(upgradeLevelsIds[index]).innerText = upgradeLevels[index];
-          document.querySelector(upgradeMaxIds[index]).style.display = "";
+          document.querySelector(upgradeMaxIds[index]).style.display = "block";
           document.querySelector(upgradePricesIds[index]).innerText = "Max Level";
         }
       }
@@ -131,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelector(upgradeLevelsIds[index]).innerText = upgradeLevels[index];
       document.querySelector(upgradePricesIds[index]).innerText = upgradePrices[index];
       document.getElementById("points").innerText = currentCookies;
-      document.querySelector(upgradeMaxIds[index]).style.display = "none";
     });
   });
 
@@ -167,5 +166,5 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector(value).style.backgroundColor = "#A9A9A9";
       }
     });
-  }, 100);
+  }, 1000);
 });
