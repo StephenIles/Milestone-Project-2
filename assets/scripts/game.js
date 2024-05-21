@@ -55,6 +55,18 @@ document.addEventListener('DOMContentLoaded', function () {
     ".b9",
     ".b10",
   ];
+  const upgradeButtonsCookiesTag = [
+    "#u1c",
+    "#u2c",
+    "#u3c",
+    "#u4c",
+    "#u5c",
+    "#u6c",
+    "#u7c",
+    "#u8c",
+    "#u9c",
+    "#u10c",
+  ]
 
   document.getElementById("cookie").addEventListener("click", function () {
     currentCookies += cookiesPerClick;
@@ -78,10 +90,11 @@ document.addEventListener('DOMContentLoaded', function () {
           cookiesPerClick += 10;
           document.querySelector(upgradeLevelsIds[index]).innerText = upgradeLevels[index];
           document.querySelector(upgradePricesIds[index]).innerText = upgradePrices[index];
-        } else if (upgradeLevels[index] == 9) {
+        } else if (upgradeLevels[index] === 9) {
           upgradeLevels[index] += 1;
           document.querySelector(upgradeLevelsIds[index]).innerText = upgradeLevels[index];
           document.querySelector(upgradeMaxIds[index]).style.display = "";
+          document.querySelector(upgradeButtonsCookiesTag[index]).style.display = "None";
           document.querySelector(upgradePricesIds[index]).innerText = "Max Level";
         }
       }

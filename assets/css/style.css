@@ -42,15 +42,39 @@ body {
     background-position: center;
     background-size: contain;
     height: 400px;
-    margin: 20px;
+    margin:  auto 20px;
     transform: scale(1, 1);
 }
 
+.cookie-box {
+    background-image: url(../images/cookieBackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    border: 5px solid black;
+    margin: auto;
+}
 
+.upgrade {
+    background-image: url(../images/storeCupboard.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    border: 5px solid black;
+}
+
+.upgrade-buttons {
+    background-image: url(../images/groceryStore.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    border: 5px solid black;
+    margin-right: 10px
+}
 
 .upgrade-stats {
     background-color: #FF7F3E;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 30px;
     border: solid 2px black;
 }
@@ -59,14 +83,18 @@ body {
     background-color: #A9A9A9;
     border-radius: 30px;
     border: solid 2px black;
-    margin: 10px;
+    margin: 10px auto;
 }
 
 .reset-button {
     background-color: #FFDA78;
     border-radius: 30px;
     border: solid 2px black;
-    margin: auto;
+    margin: 50px auto;
+}
+
+.upgrades {
+    margin: 50px 0;
 }
 /****************** Footer **************/
 
