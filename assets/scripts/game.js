@@ -1,7 +1,7 @@
 $(function () {
   var currentCookies = 0;
   var cookiesPerClick = 1;
-  var cookiesPerSecond = 1000000000;
+  var cookiesPerSecond = 0;
   var cookiesPerSecondAddition = 1;
   var upgradeLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   var upgradeLevelsIds = [
