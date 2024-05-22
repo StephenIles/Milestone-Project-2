@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: #E5E4E2;
 }
 
 /****************** Header **************/
@@ -34,7 +34,7 @@ body {
 
 .game-head {
     height: 150px;
-    color: #fff;
+    color: black;
 }
 
 #cookie {
