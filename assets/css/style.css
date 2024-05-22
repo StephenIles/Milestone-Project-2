@@ -112,7 +112,7 @@ body {
     margin-top: 60px;
     background-repeat: no-repeat;
     background-position: center;
-    
+    border: 5px solid black;
     background-image: url(../images/howToBackground.png);
     border-radius: 25px;
     padding: 30px;
@@ -128,21 +128,34 @@ body {
     background-color: rgba(0,0,0,0.5); 
     border-radius: 25px;
     color: white;
+    font-size: 17px;
 }
 
 /****************** Top Scores **************/
 
-.top-score {
+.scores-body {
     margin-top: 60px;
+    margin-bottom: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid black;
+    background-image: url(../images/topScoreBackground.png);
+    border-radius: 25px;
+    padding: 30px;
 }
 
-.scores-head {
+.scores-body h2 {
     margin-bottom: 30px;
     text-decoration: underline;
 }
 
-.scores-body {
-    margin-bottom: 60px;
+.scores-inner {
+    margin-top: 25px;
+    background-color: rgba(0,0,0,0.5); 
+    border-radius: 25px;
+    color: white;
+    font-size: 17px;
+    padding: 20px;
 }
 
 .topitem {
