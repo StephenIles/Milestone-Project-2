@@ -48,7 +48,7 @@ body {
 }
 
 .cookie-box {
-    background-image: url(../images/cookieBackground.png);
+    background-image: url(../images/cookieBackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
@@ -57,7 +57,7 @@ body {
 }
 
 .upgrade {
-    background-image: url(../images/storeCupboard.png);
+    background-image: url(../images/storeCupboard.jpg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
@@ -66,7 +66,7 @@ body {
 }
 
 .upgrade-buttons {
-    background-image: url(../images/groceryStore.png);
+    background-image: url(../images/groceryStore.jpg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 25px;
@@ -113,7 +113,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border: 5px solid black;
-    background-image: url(../images/howToBackground.png);
+    background-image: url(../images/howToBackground.jpg);
     border-radius: 25px;
     padding: 30px;
 }
@@ -139,7 +139,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border: 5px solid black;
-    background-image: url(../images/topScoreBackground.png);
+    background-image: url(../images/topScoreBackground.jpg);
     border-radius: 25px;
     padding: 30px;
 }
@@ -363,3 +363,4 @@ body {
         margin: 30px 10px 0 10px;
     }
 }
+
