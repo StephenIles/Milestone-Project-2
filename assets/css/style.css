@@ -165,137 +165,145 @@ body {
     background-image: url(../images/a1Achieved.png);
 }
 
-
-
-#a2 {
-    background-image: url(../images/Chocolate_Factory_Max.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a2not {
+    background-image: url(../images/a2NotAchieved.png);
 }
 
-#a3 {
-    background-image: url(../images/Cookies_Robots_Max.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a2achieve {
+    background-image: url(../images/a2Achieved.png);
 }
 
-#a4 {
-    background-image: url(../images/Grandma_s_Seceret_Max.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a3not {
+    background-image: url(../images/a3NotAchieved.png);
 }
 
-#a5 {
-    background-image: url(../images/Cookie_Conveyor_Max.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a3achieve {
+    background-image: url(../images/a3Achieved.png);
+}
+.a4not {
+    background-image: url(../images/a4NotAchieved.png);
 }
 
-#a6 {
-    background-image: url(../images/Magic_Rolling_Pins_Max.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a4achieve {
+    background-image: url(../images/a4Achieved.png);
+}
+.a5not {
+    background-image: url(../images/a5NotAchieved.png);
 }
 
-#a7 {
-    background-image: url(../images/Sugar_Rush_Max.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a5achieve {
+    background-image: url(../images/a5Achieved.png);
+}
+.a6not {
+    background-image: url(../images/a6NotAchieved.png);
 }
 
-#a8 {
-    background-image: url(../images/Time_Machines_Max.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a6achieve {
+    background-image: url(../images/a6Achieved.png);
+}
+.a7not {
+    background-image: url(../images/a7NotAchieved.png);
 }
 
-#a9 {
-    background-image: url(../images/Celestial_Cookies_Max.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a7achieve {
+    background-image: url(../images/a7Achieved.png);
+}
+.a8not {
+    background-image: url(../images/a8NotAchieved.png);
 }
 
-#a10 {
-    background-image: url(../images/Infinite_Cookies_Jar_Max.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a8achieve {
+    background-image: url(../images/a8Achieved.png);
+}
+.a9not {
+    background-image: url(../images/a9NotAchieved.png);
 }
 
-#a11 {
-    background-image: url(../images/1000_Cookies.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a9achieve {
+    background-image: url(../images/a9Achieved.png);
+}
+.a10not {
+    background-image: url(../images/a10NotAchieved.png);
 }
 
-#a12 {
-    background-image: url(../images/100_000_Cookies.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a10achieve {
+    background-image: url(../images/a10Achieved.png);
+}
+.a11not {
+    background-image: url(../images/a11NotAchieved.png);
 }
 
-#a13 {
-    background-image: url(../images/1_Million_Cookies.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a11achieve {
+    background-image: url(../images/a11Achieved.png);
+}
+.a12not {
+    background-image: url(../images/a12NotAchieved.png);
 }
 
-#a14 {
-    background-image: url(../images/10_Million_Cookies.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a12achieve {
+    background-image: url(../images/a12Achieved.png);
+}
+.a13not {
+    background-image: url(../images/a13NotAchieved.png);
 }
 
-#a15 {
-    background-image: url(../images/100_Million_Cookies.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a13achieve {
+    background-image: url(../images/a13Achieved.png);
+}
+.a14not {
+    background-image: url(../images/a14NotAchieved.png);
 }
 
-#a16 {
-    background-image: url(../images/1_Billion_Cookies.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a14achieve {
+    background-image: url(../images/a14Achieved.png);
 }
 
-#a17 {
-    background-image: url(../images/10_Billion_Cookies.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a15not {
+    background-image: url(../images/a15NotAchieved.png);
 }
 
-#a18 {
-    background-image: url(../images/100_Billion_Cookies.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a15achieve {
+    background-image: url(../images/a15Achieved.png);
 }
 
-#a19 {
-    background-image: url(../images/1_Trillion_Cookies.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a16not {
+    background-image: url(../images/a16NotAchieved.png);
 }
 
-#a20 {
-    background-image: url(../images/10_Trillion_Cookies.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.a16achieve {
+    background-image: url(../images/a16Achieved.png);
 }
+
+.a17not {
+    background-image: url(../images/a17NotAchieved.png);
+}
+
+.a17achieve {
+    background-image: url(../images/a17Achieved.png);
+}
+
+.a18not {
+    background-image: url(../images/a18NotAchieved.png);
+}
+
+.a18achieve {
+    background-image: url(../images/a18Achieved.png);
+}
+
+.a19not {
+    background-image: url(../images/a19NotAchieved.png);
+}
+
+.a19achieve {
+    background-image: url(../images/a19Achieved.png);
+}
+
+.a20not {
+    background-image: url(../images/a20NotAchieved.png);
+}
+
+.a20achieve {
+    background-image: url(../images/a20Achieved.png);
+}
+
+

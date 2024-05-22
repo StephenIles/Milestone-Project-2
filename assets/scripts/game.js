@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   let currentCookies = 0;
   let cookiesPerClick = 1;
-  let cookiesPerSecond = 1000000000;
+  let cookiesPerSecond = 0;
   let cookiesPerSecondAddition = 1;
+  let overallCookies = 0;
+  let achievements = 0;
   let upgradeLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   const upgradeLevelsIds = [
     "#u1l",
@@ -67,9 +69,76 @@ document.addEventListener('DOMContentLoaded', function () {
     "#u9c",
     "#u10c",
   ]
+  const achievementIds = [
+    "#a1", 
+    "#a2", 
+    "#a3", 
+    "#a4", 
+    "#a5", 
+    "#a6", 
+    "#a7", 
+    "#a8", 
+    "#a9", 
+    "#a10", 
+    "#a11", 
+    "#a12", 
+    "#a13", 
+    "#a14", 
+    "#a15", 
+    "#a16", 
+    "#a17", 
+    "#a18", 
+    "#a19", 
+    "#a20"
+  ];
+  const notAchievedClass = [
+    "a1not",
+    "a2not",
+    "a3not",
+    "a4not",
+    "a5not",
+    "a6not",
+    "a7not",
+    "a8not",
+    "a9not",
+    "a10not",
+    "a11not",
+    "a12not",
+    "a13not",
+    "a14not",
+    "a15not",
+    "a16not",
+    "a17not",
+    "a18not",
+    "a19not",
+    "a20not"
+  ]
+  const achievedClass = [
+    "a1achieve",
+    "a2achieve",
+    "a3achieve",
+    "a4achieve",
+    "a5achieve",
+    "a6achieve",
+    "a7achieve",
+    "a8achieve",
+    "a9achieve",
+    "a10achieve",
+    "a11achieve",
+    "a12achieve",
+    "a13achieve",
+    "a14achieve",
+    "a15achieve",
+    "a16achieve",
+    "a17achieve",
+    "a18achieve",
+    "a19achieve",
+    "a20achieve" 
+  ]
 
   document.getElementById("cookie").addEventListener("click", function () {
     currentCookies += cookiesPerClick;
+    overallCookies += cookiesPerClick
     document.getElementById("points").innerText = currentCookies;
     document.getElementById("cookie").style.transform = "scale(1.05, 1.05)";
     setTimeout(function () {
@@ -135,6 +204,8 @@ document.addEventListener('DOMContentLoaded', function () {
     cookiesPerClick = 1;
     cookiesPerSecond = 0;
     cookiesPerSecondAddition = 1;
+    overallCookies = 0;
+    achievements = 0;
     upgradeLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     upgradePrices = [
       10, 250, 1500, 3000, 5000, 7500, 12000, 18000, 30000, 50000,
@@ -145,6 +216,10 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelector(upgradePricesIds[index]).innerText = upgradePrices[index];
       document.getElementById("points").innerText = currentCookies;
       document.querySelector(upgradeMaxIds[index]).style.display = "none";
+    });
+
+    achievementIds.forEach(function (value,index) {
+      document.querySelector(value).classList.remove(achievedClass[index]);
     });
   });
 
@@ -163,12 +238,15 @@ document.addEventListener('DOMContentLoaded', function () {
   // Functionality for automatic cookies
   setInterval(() => {
     currentCookies += cookiesPerSecond;
+    overallCookies += cookiesPerSecond
     document.getElementById("cps").innerText = cookiesPerSecond;
     document.getElementById("points").innerText = currentCookies;
   }, 1000);
 
-  // Checks to see Upgrades are purchasable and changes background color depending on condition
+  // Checks game conditions every .1 second
   setInterval(() => {
+
+    // Changes background color of the buy buttons depending if they are buyable, not buyable or max level
     upgradeButtons.forEach(function (value, index) {
       if (currentCookies > upgradePrices[index]) {
         if (upgradeLevels[index] != 10) {
@@ -181,9 +259,62 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    if(upgradeLevels[0] === 10) {
-      document.getElementById("a1").classList.add("a1achieve");
-      document.getElementById("a1").classList.remove("a1not");
-    }
+    // Tracks achievement stats and highlights achievement badges when achieved
+    achievementIds.forEach(function (value,index) {
+      if(upgradeLevels[index] === 10) {
+        document.querySelector(value).classList.add(achievedClass[index]);
+        achievements += 1;
+      }
+
+      if(overallCookies >= 1000) {
+        document.getElementById("a11").classList.add(achievedClass[10])
+        achievements += 1;
+      }
+
+      if(overallCookies >= 100000) {
+        document.getElementById("a12").classList.add(achievedClass[11])
+        achievements += 1;
+      }
+
+      if(overallCookies >= 1000000) {
+        document.getElementById("a13").classList.add(achievedClass[12])
+        achievements += 1;
+      }
+
+      if(overallCookies >= 10000000) {
+        document.getElementById("a14").classList.add(achievedClass[13])
+        achievements += 1;
+      }
+
+      if(overallCookies >= 100000000) {
+        document.getElementById("a15").classList.add(achievedClass[14])
+        achievements += 1;
+      }
+
+      if(overallCookies >= 1000000000) {
+        document.getElementById("a16").classList.add(achievedClass[15])
+        achievements += 1;
+      }
+
+      if(overallCookies >= 10000000000) {
+        document.getElementById("a17").classList.add(achievedClass[16])
+        achievements += 1;
+      }
+
+      if(overallCookies >= 100000000000) {
+        document.getElementById("a18").classList.add(achievedClass[17])
+        achievements += 1;
+      }
+
+      if(overallCookies >= 1000000000000) {
+        document.getElementById("a19").classList.add(achievedClass[18])
+        achievements += 1;
+      }
+
+      if(overallCookies >= 10000000000000) {
+        document.getElementById("a20").classList.add(achievedClass[19])
+        achievements += 1;
+      }
+    });
   }, 100);
 });
