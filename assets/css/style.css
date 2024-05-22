@@ -110,14 +110,24 @@ body {
 
 .how-to {
     margin-top: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-image: url(../images/howToBackground.png);
+    border-radius: 25px;
+    padding: 30px;
 }
 
-.how-to-header {
+.how-to-body h2 {
     text-decoration: underline;
+    margin-bottom: 30px;
 }
 
 .how-to-body {
-    margin-top: 25px
+    margin-top: 25px;
+    background-color: rgba(0,0,0,0.5); 
+    border-radius: 25px;
+    color: white;
 }
 
 /****************** Top Scores **************/
@@ -141,6 +151,9 @@ body {
   
 /****************** Achievements **************/
 
+.achievement-header {
+    text-decoration: underline;
+}
 .achievement {
     height: 150px;
     margin: 15px;
