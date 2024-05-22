@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
   let cookiesPerSecond = 0;
   let cookiesPerSecondAddition = 1;
   let overallCookies = 0;
-  let achievements = 0;
   let upgradeLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   const upgradeLevelsIds = [
     "#u1l",
@@ -91,28 +90,6 @@ document.addEventListener('DOMContentLoaded', function () {
     "#a19", 
     "#a20"
   ];
-  const notAchievedClass = [
-    "a1not",
-    "a2not",
-    "a3not",
-    "a4not",
-    "a5not",
-    "a6not",
-    "a7not",
-    "a8not",
-    "a9not",
-    "a10not",
-    "a11not",
-    "a12not",
-    "a13not",
-    "a14not",
-    "a15not",
-    "a16not",
-    "a17not",
-    "a18not",
-    "a19not",
-    "a20not"
-  ]
   const achievedClass = [
     "a1achieve",
     "a2achieve",
@@ -205,13 +182,12 @@ document.addEventListener('DOMContentLoaded', function () {
     cookiesPerSecond = 0;
     cookiesPerSecondAddition = 1;
     overallCookies = 0;
-    achievements = 0;
     upgradeLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     upgradePrices = [
       10, 250, 1500, 3000, 5000, 7500, 12000, 18000, 30000, 50000,
     ];
 
-    upgradeLevels.forEach(function (value, index) {
+    upgradeLevels.forEach(function (index) {
       document.querySelector(upgradeLevelsIds[index]).innerText = upgradeLevels[index];
       document.querySelector(upgradePricesIds[index]).innerText = upgradePrices[index];
       document.getElementById("points").innerText = currentCookies;
@@ -243,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("points").innerText = currentCookies;
   }, 1000);
 
-  // Checks game conditions every .1 second
+  // Checks game conditions every 0.1 second
   setInterval(() => {
 
     // Changes background color of the buy buttons depending if they are buyable, not buyable or max level
@@ -316,5 +292,7 @@ document.addEventListener('DOMContentLoaded', function () {
         achievements += 1;
       }
     });
+
+    document.getElementById("overall").innerText = overallCookies;
   }, 100);
 });
