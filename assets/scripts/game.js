@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Changes background color of the buy buttons depending if they are buyable, not buyable or max level
     upgradeButtons.forEach(function (value, index) {
       if (currentCookies > upgradePrices[index]) {
-        if (upgradeLevels[index] != 10) {
+        if (upgradeLevels[index] !== 10) {
           document.querySelector(value).style.backgroundColor = "#7AB2B2";
         } else {
           document.querySelector(value).style.backgroundColor = "#36454F";
@@ -235,61 +235,58 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
+    // Visiual feedback for the Reset Button
+    document.getElementById("reset-button").addEventListener("click", function () {
+      document.getElementById("reset-button").style.backgroundColor = "#FAC126";
+      setTimeout(function () {
+        document.getElementById("reset-button").style.backgroundColor = "#FFDA78";
+      }, 200);
+    });
+
     // Tracks achievement stats and highlights achievement badges when achieved
     achievementIds.forEach(function (value,index) {
       if(upgradeLevels[index] === 10) {
         document.querySelector(value).classList.add(achievedClass[index]);
-        achievements += 1;
       }
 
       if(overallCookies >= 1000) {
         document.getElementById("a11").classList.add(achievedClass[10])
-        achievements += 1;
       }
 
       if(overallCookies >= 100000) {
         document.getElementById("a12").classList.add(achievedClass[11])
-        achievements += 1;
       }
 
       if(overallCookies >= 1000000) {
         document.getElementById("a13").classList.add(achievedClass[12])
-        achievements += 1;
       }
 
       if(overallCookies >= 10000000) {
         document.getElementById("a14").classList.add(achievedClass[13])
-        achievements += 1;
       }
 
       if(overallCookies >= 100000000) {
         document.getElementById("a15").classList.add(achievedClass[14])
-        achievements += 1;
       }
 
       if(overallCookies >= 1000000000) {
         document.getElementById("a16").classList.add(achievedClass[15])
-        achievements += 1;
       }
 
       if(overallCookies >= 10000000000) {
         document.getElementById("a17").classList.add(achievedClass[16])
-        achievements += 1;
       }
 
       if(overallCookies >= 100000000000) {
         document.getElementById("a18").classList.add(achievedClass[17])
-        achievements += 1;
       }
 
       if(overallCookies >= 1000000000000) {
         document.getElementById("a19").classList.add(achievedClass[18])
-        achievements += 1;
       }
 
       if(overallCookies >= 10000000000000) {
         document.getElementById("a20").classList.add(achievedClass[19])
-        achievements += 1;
       }
     });
 
