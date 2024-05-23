@@ -2,7 +2,7 @@
 
 ## Live Website Link
 
-  [One Life - Project 1](https://stepheniles.github.io/OneLife-Milestone-Project-1-/index.html)
+  [Cookies Craze - Project 2](https://stepheniles.github.io/Milestone-Project-2/)
 
 ## User Experience (UX)
 
@@ -19,10 +19,12 @@
 -   ### Design
     -   #### Colour Scheme
         -   I used [Color Hunt](https://colorhunt.co) to find a colour palette I felt went well with the design of the website. This is the [Colour Palette](https://colorhunt.co/palette/0032852a629aff7f3effda78) that I ended up chosing and these will be featured throughout the website.
+
     -   #### Typography
-        -   
+        -   I kept the font simple and uniform throughout using the [Roboto](https://fonts.google.com/specimen/Roboto) font family for all of the text. I feel if gives a clean feel to the text throughout the page.
+
     -   #### Imagery
-        -   
+        -   I used images that went with a Kitchen theme where the cookies would be baked. Clicking the cookie in the 'kitchen', buying upgrades from the 'store' and keeping them in you 'pantry' to a recipe book on how to make the cookies (play the game). I felt the images used really tie in the elements on the page and gives it a whole feel. All Images were created using [Dream Studio](https://beta.dreamstudio.ai/generate)
 
 *   ### Wireframes
 
@@ -38,7 +40,7 @@
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [JQuery]((https://jquery.com/))
+-   [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
@@ -48,8 +50,6 @@
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
@@ -65,11 +65,19 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Results
 
+![HTML Validator Results](/assets/images/HTMLValidator.PNG "HTML Validator Results")
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
 ### Results
 
+![CSS Validator Results](/assets/images/CSSValidator.PNG "CSS Validator Results")
+
+-   [JSLint](https://www.jslint.com)
+
+![JSLint Results](/assets/images/JSLint.PNG "JSLint Results")
+
+The warnings found in the JSLint image above are from not declaring the 'document' 'setTimeout' and 'setInterval', using the => function shortcut and oversized character lines.  
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -83,8 +91,21 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Testing Table
 
+### Element Testing
+
+Testing the HTML elements on the page making sure they all do what they are supposed to do.
+
+| Item | What should happen? | Does it Pass or Fail |
+|:----:|:-------------------:|:--------------------:|
+|
 
 ## Lighthouse Scores
+
+![Lighthouse Scores](/assets/images/Lighthouse.PNG "Lighthouse Scores")
+
+The 95 score in performace I believe is due to the amount of Images involved in the Cookie Clicker game, for example each achievement has 2 images, one coloured one blacked out which are then switched using Javascript.
+
+The 95 score in accessibility is due to using Headers out of order througout the page.
 
 ### Known Bugs
 

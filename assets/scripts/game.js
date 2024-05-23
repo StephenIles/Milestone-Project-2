@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   let currentCookies = 0;
   let cookiesPerClick = 1;
   let cookiesPerSecond = 0;
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     "#u10max"
   ];
   let upgradePrices = [
-    10, 250, 1500, 3000, 5000, 7500, 12000, 18000, 30000, 50000,
+    10, 250, 1500, 3000, 5000, 7500, 12000, 18000, 30000, 50000
   ];
   const upgradePricesIds = [
     "#u1p",
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     "#u7p",
     "#u8p",
     "#u9p",
-    "#u10p",
+    "#u10p"
   ];
   const upgradeButtons = [
     ".b1",
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ".b7",
     ".b8",
     ".b9",
-    ".b10",
+    ".b10"
   ];
   const upgradeButtonsCookiesTag = [
     "#u1c",
@@ -66,28 +66,27 @@ document.addEventListener('DOMContentLoaded', function () {
     "#u7c",
     "#u8c",
     "#u9c",
-    "#u10c",
-  ]
+    "#u10c"
+  ];
   const achievementIds = [
-    "#a1", 
-    "#a2", 
-    "#a3", 
-    "#a4", 
-    "#a5", 
-    "#a6", 
-    "#a7", 
-    "#a8", 
-    "#a9", 
-    "#a10", 
-    "#a11", 
-    "#a12", 
-    "#a13", 
-    "#a14", 
-    "#a15", 
-    "#a16", 
-    "#a17", 
-    "#a18", 
-    "#a19", 
+    "#a1",
+    "#a2",
+    "#a3",
+    "#a4",
+    "#a5",
+    "#a6",
+    "#a7",
+    "#a8",
+    "#a9",
+    "#a10",
+    "#a11",
+    "#a12",
+    "#a13",
+    "#a15",
+    "#a16",
+    "#a17",
+    "#a18",
+    "#a19",
     "#a20"
   ];
   const achievedClass = [
@@ -110,12 +109,12 @@ document.addEventListener('DOMContentLoaded', function () {
     "a17achieve",
     "a18achieve",
     "a19achieve",
-    "a20achieve" 
-  ]
+    "a20achieve"
+  ];
 
   document.getElementById("cookie").addEventListener("click", function () {
     currentCookies += cookiesPerClick;
-    overallCookies += cookiesPerClick
+    overallCookies += cookiesPerClick;
     document.getElementById("points").innerText = currentCookies;
     document.getElementById("cookie").style.transform = "scale(1.05, 1.05)";
     setTimeout(function () {
@@ -184,10 +183,10 @@ document.addEventListener('DOMContentLoaded', function () {
     overallCookies = 0;
     upgradeLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     upgradePrices = [
-      10, 250, 1500, 3000, 5000, 7500, 12000, 18000, 30000, 50000,
+      10, 250, 1500, 3000, 5000, 7500, 12000, 18000, 30000, 50000
     ];
 
-    upgradeLevels.forEach(function (index) {
+    upgradeLevels.forEach(function (value, index) {
       document.querySelector(upgradeLevelsIds[index]).innerText = upgradeLevels[index];
       document.querySelector(upgradePricesIds[index]).innerText = upgradePrices[index];
       document.getElementById("points").innerText = currentCookies;
@@ -214,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Functionality for automatic cookies
   setInterval(() => {
     currentCookies += cookiesPerSecond;
-    overallCookies += cookiesPerSecond
+    overallCookies += cookiesPerSecond;
     document.getElementById("cps").innerText = cookiesPerSecond;
     document.getElementById("points").innerText = currentCookies;
   }, 1000);
@@ -250,43 +249,43 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if(overallCookies >= 1000) {
-        document.getElementById("a11").classList.add(achievedClass[10])
+        document.getElementById("a11").classList.add(achievedClass[10]);
       }
 
       if(overallCookies >= 100000) {
-        document.getElementById("a12").classList.add(achievedClass[11])
+        document.getElementById("a12").classList.add(achievedClass[11]);
       }
 
       if(overallCookies >= 1000000) {
-        document.getElementById("a13").classList.add(achievedClass[12])
+        document.getElementById("a13").classList.add(achievedClass[12]);
       }
 
       if(overallCookies >= 10000000) {
-        document.getElementById("a14").classList.add(achievedClass[13])
+        document.getElementById("a14").classList.add(achievedClass[13]);
       }
 
       if(overallCookies >= 100000000) {
-        document.getElementById("a15").classList.add(achievedClass[14])
+        document.getElementById("a15").classList.add(achievedClass[14]);
       }
 
       if(overallCookies >= 1000000000) {
-        document.getElementById("a16").classList.add(achievedClass[15])
+        document.getElementById("a16").classList.add(achievedClass[15]);
       }
 
       if(overallCookies >= 10000000000) {
-        document.getElementById("a17").classList.add(achievedClass[16])
+        document.getElementById("a17").classList.add(achievedClass[16]);
       }
 
       if(overallCookies >= 100000000000) {
-        document.getElementById("a18").classList.add(achievedClass[17])
+        document.getElementById("a18").classList.add(achievedClass[17]);
       }
 
       if(overallCookies >= 1000000000000) {
-        document.getElementById("a19").classList.add(achievedClass[18])
+        document.getElementById("a19").classList.add(achievedClass[18]);
       }
 
       if(overallCookies >= 10000000000000) {
-        document.getElementById("a20").classList.add(achievedClass[19])
+        document.getElementById("a20").classList.add(achievedClass[19]);
       }
     });
 
