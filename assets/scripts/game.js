@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(value).classList.add(achievedClass[index]);
       }
 
-      if(overallCookies >= 1000) {
+      if(overallCookies >= 10000) {
         document.getElementById("a11").classList.add(achievedClass[10]);
       }
 

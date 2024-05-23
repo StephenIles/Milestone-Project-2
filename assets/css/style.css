@@ -367,3 +367,9 @@ body {
     }
 }
 
+@media (max-width: 1200px) {
+    .how-to {
+        background-size: cover;
+    }
+}
+
