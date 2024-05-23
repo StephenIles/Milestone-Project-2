@@ -91,13 +91,126 @@ The warnings found in the JSLint image above are from not declaring the 'documen
 
 ## Testing Table
 
-### Element Testing
-
-Testing the HTML elements on the page making sure they all do what they are supposed to do.
+### Manual Testing
 
 | Item | What should happen? | Does it Pass or Fail |
 |:----:|:-------------------:|:--------------------:|
-|
+| Navigation Achievements Button | Takes you to the Achievements section | Pass |
+| Navigation How To Play Button | Takes you to the How To Play section | Pass |
+| Navigation Top Scores Button | Takes you to the Top Scores section | Pass |
+||||
+| Cookie Button | Adds one cookie to the Overall Cookies and Current Cookies | Pass |
+||||
+| Buy Golden Oven Button (Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Choloclate Factory Button (Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Cookie Robot Button (Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Grandma's Secret Button (Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Cookie Conveyor Button (Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Magic Rolling Pin Button (Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Sugar Rush Button (Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Time Machine Button (Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Celestial Cookie Button (Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Infinite Cookie Jar Button (Grey Colour) | Nothing happens when you try to click the button | Pass |
+||||
+| Current Cookies is more than Golden Oven buy price | Buy button turns Blue and is clickable | Pass |
+| Current Cookies is more than Chocolate Factory buy price | Buy button turns Blue and is clickable | Pass |
+| Current Cookies is more than Cookie Robot buy price | Buy button turns Blue and is clickable | Pass |
+| Current Cookies is more than Grandma's Secret buy price | Buy button turns Blue and is clickable | Pass |
+| Current Cookies is more than Cookie Conveyor buy price | Buy button turns Blue and is clickable | Pass |
+| Current Cookies is more than Magic Rolling Pin buy price | Buy button turns Blue and is clickable | Pass |
+| Current Cookies is more than Sugar Rush buy price | Buy button turns Blue and is clickable | Pass |
+| Current Cookies is more than Time Machine buy price | Buy button turns Blue and is clickable | Pass |
+| Current Cookies is more than Celestial Cookie buy price | Buy button turns Blue and is clickable | Pass |
+| Current Cookies is more than Infinite Cookie Jar buy price | Buy button turns Blue and is clickable | Pass |
+||||
+| Buy Golden Oven Button (Blue Colour) | Adds 1 to the Golden Oven Tracker (Orange Color), increases the price, increases the Cookies Per Second stat and changes background color depending on the amount of current cookies | Pass |
+| Buy Chocolate Factory Button (Blue Colour) | Adds 1 to the Chocolate Factory Tracker (Orange Color), increases the price, increases the Cookies Per Second stat and changes background color depending on the amount of current cookies | Pass |
+| Buy Cookie Robot Button (Blue Colour) | Adds 1 to the Cookie Robot Tracker (Orange Color), increases the price, increases the Cookies Per Second stat and changes background color depending on the amount of current cookies | Pass |
+| Buy Grandma's Secret Button (Blue Colour) | Adds 1 to the Grandma's Secret Tracker (Orange Color), increases the price, increases the Cookies Per Second stat and changes background color depending on the amount of current cookies | Pass |
+| Buy Cookie Conveyor Button (Blue Colour) | Adds 1 to the Cookie Conveyor Tracker (Orange Color), increases the price, increases the Cookies Per Second stat and changes background color depending on the amount of current cookies | Pass |
+| Buy Magic Rolling Pin Button (Blue Colour) | Adds 1 to the Magic Rolling Pin Tracker (Orange Color), increases the price, increases the Cookies Per Second stat and changes background color depending on the amount of current cookies | Pass |
+| Buy Sugar Rush Button (Blue Colour) | Adds 1 to the Sugar Rush Tracker (Orange Color), increases the price, increases the Cookies Per Second stat and changes background color depending on the amount of current cookies | Pass |
+| Buy Time Machine Button (Blue Colour) | Adds 1 to the Time Machine Tracker (Orange Color), increases the price, increases the Cookies Per Second stat and changes background color depending on the amount of current cookies | Pass |
+| Buy Celestial Cookie Button (Blue Colour) | Adds 1 to the Celestial Cookie Tracker (Orange Color), increases the price, increases the Cookies Per Second stat and changes background color depending on the amount of current cookies | Pass |
+| Buy Infinite Cookie Jar Button (Blue Colour) | Adds 1 to the Infinite Cookie Jar Tracker (Orange Color), increases the price, increases the Cookies Per Second stat and changes background color depending on the amount of current cookies | Pass |
+||||
+| Golden Oven Tracker get to 10 | Golden Oven buy buttons goes dark grey, changes price to Max Level, adds a Max tag to the tracker changes the picture on the Golden Ovens Max Achievement | Pass |
+| Golden Chocolate Factory get to 10 | Chocolate Factory buy buttons goes dark grey, changes price to Max Level, adds a Max tag to the tracker changes the picture on the Chocolate Factory Max Achievement | Pass |
+| Golden Grandma's Secret get to 10 | Grandma's Secret buy buttons goes dark grey, changes price to Max Level, adds a Max tag to the tracker changes the picture on the Grandma's Secret Max Achievementr | Pass |
+| Golden Cookie Conveyor get to 10 | Cookie Conveyor buy buttons goes dark grey, changes price to Max Level, adds a Max tag to the tracker changes the picture on the Cookie Conveyor Max Achievementr | Pass |
+| Golden Magic Rolling Pin get to 10 | Magic Rolling Pin buy buttons goes dark grey, changes price to Max Level, adds a Max tag to the tracker changes the picture on the Magic Rolling Pin Max Achievement | Pass |
+| Golden Sugar Rush get to 10 | Sugar Rush buy buttons goes dark grey, changes price to Max Level, adds a Max tag to the tracker changes the picture on the Sugar Rush Max Achievement | Pass |
+| Golden Time Machine get to 10 | Time Machine buy buttons goes dark grey, changes price to Max Level, adds a Max tag to the tracker changes the picture on the Time Machine Max Achievement | Pass |
+| Golden Celestial Cookie get to 10 | Celestial Cookie buy buttons goes dark grey, changes price to Max Level, adds a Max tag to the tracker changes the picture on the Celestial Cookie Max Achievement | Pass |
+| Golden Infinite Cookie Jar get to 10 | Infinite Cookie Jar buy buttons goes dark grey, changes price to Max Level, adds a Max tag to the tracker changes the picture on the Infinite Cookie Jar Max Achievement | Pass |
+||||
+| Buy Golden Oven Button Max (Dark Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Choloclate Factory Max Button (Dark Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Cookie Robot Button Max (Dark Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Grandma's Secret Button Max (Dark Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Cookie Conveyor Button Max (Dark Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Magic Rolling Pin Button Max (Dark Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Sugar Rush Button Max (Dark Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Time Machine Button Max (Dark Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Celestial Cookie Button Max (Dark Grey Colour) | Nothing happens when you try to click the button | Pass |
+| Buy Infinite Cookie Jar Button Max(Dark Grey Colour) | Nothing happens when you try to click the button | Pass |
+||||
+| Reset Button | Resets the game back to beginning, adds the current score to the top score section if its within the top 5 scores | Pass |
+
+### Automated Testing
+
+I didn't use automated testing throughout this project, but if I was to use is these would be the conditions in order I would use to make sure the code is doing everthing correctly. I will manually test each of these and mark if it is a pass or fail.
+
+| Test Condition | Pass/Fail |
+|:--------------:|:---------:|
+| When clicking the cookie Current Cookies would increase by 1 | Pass |
+| When clicking the cookie Overall Cookies would increase by 1 | Pass |
+|||
+| Only able to click Golden Oven Buy button when Current Cookies > Golden Oven Price | Pass |
+| Only able to click Choloclate Factory Buy button when Current Cookies > Choloclate Factory Price | Pass |
+| Only able to click Cookie Robot Buy button when Current Cookies > Cookie Robot Price | Pass |
+| Only able to click Grandma's Secret Buy button when Current Cookies > Grandma's Secret Price | Pass |
+| Only able to click Cookie Conveyor Buy button when Current Cookies > Cookie Conveyor Price | Pass |
+| Only able to click Magic Rolling Pin Buy button when Current Cookies > Magic Rolling Pin Price | Pass |
+| Only able to click Sugar Rush Buy button when Current Cookies > Sugar Rush Price | Pass |
+| Only able to click Time Machine Buy button when Current Cookies > Time Machine Price | Pass |
+| Only able to click Celestial Cookie Buy button when Current Cookies > Celestial Cookie Price | Pass |
+| Only able to click Infinite Cookie Jar Buy button when Current Cookies > Infinite Cookie Jar Price | Pass |
+|||
+| Clicking Golden Oven Buy button addes 1 to Golden Oven level | Pass |
+| Clicking Choloclate Factory Buy button addes 1 to Choloclate Factory level | Pass |
+| Clicking Cookie Robot Buy button addes 1 to Cookie Robot level | Pass |
+| Clicking Grandma's Secret Buy button addes 1 to Grandma's Secret level | Pass |
+| Clicking Cookie Conveyor Buy button addes 1 to Cookie Conveyor level | Pass |
+| Clicking Magic Rolling Pin Buy button addes 1 to Magic Rolling level | Pass |
+| Clicking Sugar Rush Buy button addes 1 to Sugar Rush level | Pass |
+| Clicking Time Machine Buy button addes 1 to Time Machine  level | Pass |
+| Clicking Celestial Cookie Buy button addes 1 to Celestial Cookie level | Pass |
+| Clicking Infinite Cookie Buy button addes 1 to Infinite Cookie level | Pass |
+|||
+| Clicking Golden Oven Buy button takes Golden Oven price from Current Cookies | Pass |
+| Clicking Choloclate Factory Buy button takes Choloclate Factory price from Current Cookies | Pass |
+| Clicking Cookie Robot Buy button takes Cookie Robot price from Current Cookies| Pass |
+| Clicking Grandma's Secret Buy button takes Grandma's Secret price from Current Cookies| Pass |
+| Clicking Cookie Conveyor Buy button takes Cookie Conveyor price from Current Cookies | Pass |
+| Clicking Magic Rolling Pin Buy button takes Magic Rolling Pin price from Current Cookies | Pass |
+| Clicking Sugar Rush Buy button takes Sugar Rush price from Current Cookies | Pass |
+| Clicking Time Machine Buy button takes Time Machine price from Current Cookies | Pass |
+| Clicking Celestial Cookie Buy button takes Celestial Cookie price from Current Cookies | Pass |
+| Clicking Infinite Cookie Jar Buy button takes Infinite Cookie Jar price from Current Cookies | Pass |
+|||
+| Clicking Golden Oven Buy button multiplies the Golden Oven Price by 5 | Pass |
+| Clicking Choloclate Factory Buy button multiplies the Golden Oven Price by 5 | Pass |
+| Clicking Cookie Robot Buy button multiplies the Golden Oven Price by 5| Pass |
+| Clicking Grandma's Secret Buy button multiplies the Golden Oven Price by 5| Pass |
+| Clicking Cookie Conveyor Buy button multiplies the Golden Oven Price by 5 | Pass |
+| Clicking Magic Rolling Pin Buy button multiplies the Golden Oven Price by 5 | Pass |
+| Clicking Sugar Rush Buy button multiplies the Golden Oven Price by 5 | Pass |
+| Clicking Time Machine Buy button multiplies the Golden Oven Price by 5 | Pass |
+| Clicking Celestial Cookie Buy button multiplies the Golden Oven Price by 5 | Pass |
+| Clicking Infinite Cookie Jar Buy button multiplies the Golden Oven Price by 5 | Pass |
+|||
+
 
 ## Lighthouse Scores
 
